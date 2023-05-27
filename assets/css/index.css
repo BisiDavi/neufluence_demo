@@ -97,7 +97,6 @@ header {
   background-color: rgb(198, 198, 198);
   border-radius: 100px;
   padding: 10px 30px;
-
 }
 
 .site_nav ul li a {
@@ -174,6 +173,7 @@ main.main {
 
 .banner__text-content {
   padding-left: 60px;
+  width: 100%;
 }
 
 .banner .greeting {
