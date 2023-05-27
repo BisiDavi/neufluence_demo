@@ -115,10 +115,10 @@ button {
   font-family: "Futura_Medium";
   border: 2px solid rgb(82, 24, 135);
   text-transform: uppercase;
-  color: rgb(82, 24, 135);
   font-size: 16px;
   font-weight: 700;
   line-height: 40px;
+  color: white;
   letter-spacing: 2;
   background-color: transparent;
 }
@@ -129,10 +129,27 @@ button.gradient {
     rgb(149, 30, 181) 0%,
     rgb(224, 60, 107) 50%,
     rgb(252, 128, 34) 100%
-  ) !important;
-
+  );
   border: 0;
   color: #fff;
+}
+
+button.outline {
+  color: rgb(82, 24, 135);
+}
+
+button.purple {
+  background: rgb(149, 30, 181);
+  border: 0;
+}
+
+button:hover {
+  background: #fc8022;
+}
+
+button.outline:hover {
+  background: rgb(82, 24, 135);
+  color: white;
 }
 
 /* main */
@@ -145,7 +162,7 @@ main.main {
 .banner {
   display: flex;
   flex-direction: row;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .banner__text-content {
@@ -184,4 +201,8 @@ main.main {
   margin: 40px 0;
   gap: 50px;
   display: flex;
+}
+
+.banner .button_group button {
+  padding: 10px 40px;
 }

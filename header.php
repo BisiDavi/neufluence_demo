@@ -33,7 +33,7 @@
         <nav class="site_nav">
             <?php wp_nav_menu(); ?>
             <div class="button_group">
-                <button>Log in</button>
+                <button class="outline">Log in</button>
                 <button class="gradient">Access Beta</button>
             </div>
         </nav>

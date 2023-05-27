@@ -15,7 +15,7 @@
         <h4><? echo $description; ?></h4>
         <div class="button_group">
             <button class="gradient"><? echo $button_1["text"] ?></button>
-            <button class="gradient"><? echo $button_2["text"] ?></button>
+            <button class="purple"><? echo $button_2["text"] ?></button>
         </div>
     </div>
     <div class="banner__image">
