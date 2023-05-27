@@ -18,6 +18,16 @@
   src: url("../fonts/Futura_Medium.ttf");
 }
 
+@font-face {
+  font-family: "Futura_Med";
+  src: url("../fonts/Futura_Med.ttf");
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/Futura.ttf");
+}
+
 *,
 body,
 html {
@@ -49,7 +59,7 @@ header {
   justify-content: space-between;
   position: relative;
   z-index: 2;
-  padding: 40px 50px 0px 70px;
+  padding: 40px 50px 0px 60px;
 }
 .site_nav {
   display: flex;
@@ -93,12 +103,13 @@ a.custom-logo-link img {
 }
 
 /* nav button */
-.button_group {
+nav .button_group {
   gap: 20px;
   display: flex;
   margin-left: 20px;
 }
-.site_nav button {
+
+button {
   padding: 3px 30px;
   border-radius: 100px;
   font-family: "Futura_Medium";
@@ -112,6 +123,18 @@ a.custom-logo-link img {
   background-color: transparent;
 }
 
+button.gradient {
+  background: linear-gradient(
+    90deg,
+    rgb(149, 30, 181) 0%,
+    rgb(224, 60, 107) 50%,
+    rgb(252, 128, 34) 100%
+  ) !important;
+
+  border: 0;
+  color: #fff;
+}
+
 /* main */
 main.main {
   position: relative;
@@ -122,11 +145,43 @@ main.main {
 .banner {
   display: flex;
   flex-direction: row;
-  padding-left: 70px;
+  margin-top: 40px;
+}
+
+.banner__text-content {
+  padding-left: 60px;
 }
 
 .banner .greeting {
   margin-top: 100px;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5px;
+  color: #fc8022;
+}
+
+.banner .title {
+  font-size: 61px;
+  font-family: "Futura";
+  color: #204147;
+  line-height: 81px;
+  margin: 20px 0;
+}
+
+.banner__image {
+  height: 100%;
+  width: 100%;
+}
+
+.banner h4 {
+  line-height: 1.5em;
+  font-size: 25px;
+  font-family: "Futura_Light";
+  max-width: 100%;
+}
+
+.banner .button_group {
+  margin: 40px 0;
+  gap: 50px;
+  display: flex;
 }

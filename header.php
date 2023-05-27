@@ -34,7 +34,7 @@
             <?php wp_nav_menu(); ?>
             <div class="button_group">
                 <button>Log in</button>
-                <button>Access Beta</button>
+                <button class="gradient">Access Beta</button>
             </div>
         </nav>
     </header>

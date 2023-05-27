@@ -11,10 +11,12 @@
 <section class="banner">
     <div class="banner__text-content">
         <h6 class="greeting"><? echo $page_greeting; ?></h6>
-        <h1><? echo $title; ?></h1>
+        <h1 class="title"><? echo $title; ?></h1>
         <h4><? echo $description; ?></h4>
-        <button><? echo $button_1["text"] ?></button>
-        <button><? echo $button_2["text"] ?></button>
+        <div class="button_group">
+            <button class="gradient"><? echo $button_1["text"] ?></button>
+            <button class="gradient"><? echo $button_2["text"] ?></button>
+        </div>
     </div>
     <div class="banner__image">
         <img src="<? echo $banner; ?>" />
