@@ -10,9 +10,11 @@
 
 <section class="banner">
     <div class="banner__text-content">
-        <h6><? echo $page_greeting; ?></h6>
+        <h6 class="greeting"><? echo $page_greeting; ?></h6>
         <h1><? echo $title; ?></h1>
         <h4><? echo $description; ?></h4>
+        <button><? echo $button_1["text"] ?></button>
+        <button><? echo $button_2["text"] ?></button>
     </div>
     <div class="banner__image">
         <img src="<? echo $banner; ?>" />

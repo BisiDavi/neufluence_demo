@@ -11,7 +11,7 @@
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html">
 
 <head>
     <meta charset="<?php bloginfo('charset'); ?>" />
@@ -29,9 +29,13 @@
 <body>
     <div class="site-background-image" ></div>
     <header>
+        <?php the_custom_logo(); ?>
         <nav class="site_nav">
-            <?php the_custom_logo(); ?>
             <?php wp_nav_menu(); ?>
+            <div class="button_group">
+                <button>Log in</button>
+                <button>Access Beta</button>
+            </div>
         </nav>
     </header>
     <main class="main">

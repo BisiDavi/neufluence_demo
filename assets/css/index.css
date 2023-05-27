@@ -24,6 +24,12 @@ html {
   padding: 0px;
   margin: 0px;
 }
+html.html {
+  margin-top: 0px !important;
+}
+body {
+  position: relative;
+}
 
 .site-background-image {
   background-image: url("http://neufluence.local/wp-content/uploads/2023/05/Brands-Background.png");
@@ -37,13 +43,19 @@ html {
 }
 
 /* header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  padding: 40px 50px 0px 70px;
+}
 .site_nav {
   display: flex;
   position: relative;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 50px 0px 70px;
-  z-index: 2;
 }
 
 /* logo */
@@ -55,18 +67,49 @@ a.custom-logo-link img {
 .site_nav ul {
   display: flex;
   align-items: center;
-  gap: 30px;
 }
 
 .site_nav ul li {
   list-style: none;
+  border-right: 1px solid rgb(225, 225, 225);
+  padding: 10px 40px;
+}
+
+.site_nav ul li:last-child {
+  border-right: unset;
+}
+
+.site_nav li {
+  border-right: 1px solid rgb(225, 225, 225);
 }
 
 .site_nav ul li a {
   text-decoration: none;
-  font-family: "Futura_Bold";
+  font-family: "Futura_Medium";
   color: black;
-  font-size: 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* nav button */
+.button_group {
+  gap: 20px;
+  display: flex;
+  margin-left: 20px;
+}
+.site_nav button {
+  padding: 3px 30px;
+  border-radius: 100px;
+  font-family: "Futura_Medium";
+  border: 2px solid rgb(82, 24, 135);
+  text-transform: uppercase;
+  color: rgb(82, 24, 135);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 2;
+  background-color: transparent;
 }
 
 /* main */
@@ -79,6 +122,11 @@ main.main {
 .banner {
   display: flex;
   flex-direction: row;
-  width: 100%;
   padding-left: 70px;
+}
+
+.banner .greeting {
+  margin-top: 100px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
 }
