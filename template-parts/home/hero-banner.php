@@ -13,9 +13,9 @@
         <h6 class="greeting"><? echo $page_greeting; ?></h6>
         <h1 class="title"><? echo $title; ?></h1>
         <h4><? echo $description; ?></h4>
-        <div class="button_group">
-            <button class="gradient"><? echo $button_1["text"] ?></button>
-            <button class="purple"><? echo $button_2["text"] ?></button>
+        <div class="link_group">
+            <a class="btn gradient"><? echo $button_1["text"] ?></a>
+            <a class="btn purple"><? echo $button_2["text"] ?></a>
         </div>
     </div>
     <div class="banner__image">

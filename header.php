@@ -32,9 +32,9 @@
         <?php the_custom_logo(); ?>
         <nav class="site_nav">
             <?php wp_nav_menu(); ?>
-            <div class="button_group">
-                <button class="outline">Log in</button>
-                <button class="gradient">Access Beta</button>
+            <div class="link_group">
+                <a class="btn outline">Log in</a>
+                <a class="btn gradient">Access Beta</a>
             </div>
         </nav>
     </header>

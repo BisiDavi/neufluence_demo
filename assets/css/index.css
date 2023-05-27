@@ -52,6 +52,12 @@ body {
   background-size: cover;
 }
 
+/* logo */
+a.custom-logo-link img {
+  height: 40px;
+  width: 250px;
+}
+
 /* header */
 header {
   display: flex;
@@ -68,12 +74,6 @@ header {
   justify-content: space-between;
 }
 
-/* logo */
-a.custom-logo-link img {
-  height: 40px;
-  width: 250px;
-}
-
 .site_nav ul {
   display: flex;
   align-items: center;
@@ -82,7 +82,7 @@ a.custom-logo-link img {
 .site_nav ul li {
   list-style: none;
   border-right: 1px solid rgb(225, 225, 225);
-  padding: 10px 40px;
+  padding: 5px 30px;
 }
 
 .site_nav ul li:last-child {
@@ -91,6 +91,13 @@ a.custom-logo-link img {
 
 .site_nav li {
   border-right: 1px solid rgb(225, 225, 225);
+}
+
+.site_nav li:hover {
+  background-color: rgb(198, 198, 198);
+  border-radius: 100px;
+  padding: 10px 30px;
+
 }
 
 .site_nav ul li a {
@@ -103,13 +110,13 @@ a.custom-logo-link img {
 }
 
 /* nav button */
-nav .button_group {
+nav .link_group {
   gap: 20px;
   display: flex;
   margin-left: 20px;
 }
 
-button {
+.btn {
   padding: 3px 30px;
   border-radius: 100px;
   font-family: "Futura_Medium";
@@ -123,7 +130,7 @@ button {
   background-color: transparent;
 }
 
-button.gradient {
+.btn.gradient {
   background: linear-gradient(
     90deg,
     rgb(149, 30, 181) 0%,
@@ -134,20 +141,20 @@ button.gradient {
   color: #fff;
 }
 
-button.outline {
+.btn.outline {
   color: rgb(82, 24, 135);
 }
 
-button.purple {
+.btn.purple {
   background: rgb(149, 30, 181);
   border: 0;
 }
 
-button:hover {
+.btn:hover {
   background: #fc8022;
 }
 
-button.outline:hover {
+.btn.outline:hover {
   background: rgb(82, 24, 135);
   color: white;
 }
@@ -197,12 +204,12 @@ main.main {
   max-width: 100%;
 }
 
-.banner .button_group {
+.banner .link_group {
   margin: 40px 0;
   gap: 50px;
   display: flex;
 }
 
-.banner .button_group button {
+.banner .link_group button {
   padding: 10px 40px;
 }
