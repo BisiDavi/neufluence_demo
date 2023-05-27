@@ -8,7 +8,7 @@
     $banner = get_field("image",$page_id);
 ?>
 
-<section>
+<section class="banner">
     <div class="banner__text-content">
         <h6><? echo $page_greeting; ?></h6>
         <h1><? echo $title; ?></h1>
@@ -17,5 +17,4 @@
     <div class="banner__image">
         <img src="<? echo $banner; ?>" />
     </div>
-
 </section>

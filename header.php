@@ -34,4 +34,4 @@
             <?php wp_nav_menu(); ?>
         </nav>
     </header>
-    <main>
+    <main class="main">

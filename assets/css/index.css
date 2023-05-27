@@ -42,8 +42,14 @@ html {
   position: relative;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 30px;
+  padding: 0px 50px 0px 70px;
   z-index: 2;
+}
+
+/* logo */
+a.custom-logo-link img {
+  height: 40px;
+  width: 250px;
 }
 
 .site_nav ul {
@@ -61,4 +67,18 @@ html {
   font-family: "Futura_Bold";
   color: black;
   font-size: 30px;
+}
+
+/* main */
+main.main {
+  position: relative;
+  z-index: 3;
+}
+
+/* hero banner */
+.banner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-left: 70px;
 }
