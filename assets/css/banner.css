@@ -47,3 +47,21 @@
 .banner .link_group button {
   padding: 10px 40px;
 }
+
+.banner.about_us .banner__image img {
+  height: 100%;
+  width: unset;
+}
+
+.banner.about_us .banner__image {
+  height: 450px;
+  width: unset;
+  margin-top: 50px;
+}
+
+.banner.about_us .title {
+  font-family: "Futura_Medium";
+  letter-spacing: 4px;
+  font-size: 69px;
+  margin-top: 50px;
+}

@@ -11,14 +11,17 @@
 
 <section class="banner <? echo $banner_class; ?>">
     <div class="banner__text-content">
-        <h6 class="greeting"><? echo $page_greeting; ?></h6>
+        <? if($page_greeting){ ?>
+            <h6 class="greeting"><? echo $page_greeting; ?></h6>
+        <? } ?>
+
         <h1 class="title"><? echo $title; ?></h1>
         <h4><? echo $description; ?></h4>
         <div class="link_group">
         <? if($button_1['text']){ ?>
             <a class="btn gradient"><? echo $button_1["text"] ?></a> 
         <? } ?>
-        <? if($button_1['text']){ ?>
+        <? if($button_2['text']){ ?>
             <a class="btn purple"><? echo $button_2["text"] ?></a>
          <? } ?>
         </div>
