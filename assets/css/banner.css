@@ -65,3 +65,8 @@
   font-size: 69px;
   margin-top: 50px;
 }
+
+.banner.brands .title,
+.banner.creators .title {
+  width: 500px;
+}
