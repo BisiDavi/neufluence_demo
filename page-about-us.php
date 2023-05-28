@@ -12,4 +12,6 @@ get_template_part('template-parts/home/hero-banner', 'hero-banner', array(
     "page_id" => 7,
     "class" => 'about_us'
 ));
+
+get_footer();
 ?>
