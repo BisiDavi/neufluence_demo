@@ -162,6 +162,10 @@ nav .link_group {
   color: white;
 }
 
+.site_nav button {
+  display: none;
+}
+
 /* main */
 main.main,
 footer {
@@ -173,11 +177,21 @@ footer {
   header {
     padding: 30px 20px;
   }
-  nav.site_nav {
-    display: none;
-  }
 
   .site-background-image.home {
     background-position: 50% 0%;
+  }
+
+  .site_nav .menu-top-menu-container {
+    display: none;
+  }
+  .site_nav .link_group {
+    display: none;
+  }
+
+  .site_nav button {
+    height: 30px;
+    width: 30px;
+    display: flex;
   }
 }
