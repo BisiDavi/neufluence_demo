@@ -1,6 +1,7 @@
 .about_us_text {
   background-color: white;
   padding: 50px 100px;
+  position: relative;
 }
 
 .about_us_text .row {
@@ -16,10 +17,11 @@
   line-height: 60px;
   font-family: "Sen", sans-serif;
   color: #204147;
+  margin-bottom: 20px;
 }
 
 .about_us_text div p {
-  margin: 40px 0px;
+  margin: 30px 0px;
 }
 
 .about_us_text p {
@@ -28,4 +30,20 @@
   font-family: "DM Sans", sans-serif;
   color: #3b3b3b;
   font-weight: 400;
+}
+
+.about_us_text .mission div {
+  margin-top: -20px;
+}
+
+.about_us_text .icon {
+  position: absolute;
+  left: -170px;
+  height: 400px;
+  width: 400px;
+  top: 140px;
+}
+
+.about_us_text .icon svg {
+  fill: rgba(238, 87, 82, 0.04);
 }

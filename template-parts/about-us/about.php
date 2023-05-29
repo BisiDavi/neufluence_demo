@@ -7,6 +7,9 @@
 ?>
 
 <section class="about_us_text">
+    <div class="icon">
+        <svg class="tcb-icon" viewBox="0 0 512 512" data-id="icon-dot-circle-solid" ><path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm80 248c0 44.112-35.888 80-80 80s-80-35.888-80-80 35.888-80 80-80 80 35.888 80 80z"></path></svg>
+    </div>
         <div class="row who_we_are">
             <h1><? echo $title; ?></h1>
             <div><? echo $description ?></div>
