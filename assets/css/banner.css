@@ -93,7 +93,8 @@
     padding: 10px 0px;
   }
 
-  .banner__image img {
+  .banner__image img,
+  .banner.about_us .banner__image img {
     height: 100%;
     width: 100%;
   }
@@ -107,5 +108,9 @@
   }
   .banner__image {
     margin-top: -40px;
+  }
+
+  .banner.about_us .title {
+    font-size: 39px;
   }
 }

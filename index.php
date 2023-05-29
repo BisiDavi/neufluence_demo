@@ -13,6 +13,6 @@ get_template_part('template-parts/home/hero-banner', 'hero-banner',array(
     "class" => 'home'
 ));
 
-get_footer();
+ wp_footer();
 
 ?>

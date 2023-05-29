@@ -56,6 +56,10 @@ body {
   background-size: cover;
 }
 
+div#wpadminbar {
+  display: none;
+}
+
 /* logo */
 a.custom-logo-link img {
   height: 40px;
@@ -76,6 +80,12 @@ header {
   position: relative;
   align-items: center;
   justify-content: space-between;
+}
+
+.menu_list_group {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .site_nav ul {
@@ -176,25 +186,98 @@ footer {
 @media (max-width: 768px) {
   header {
     padding: 30px 20px;
+    z-index: 200;
+  }
+
+  a.custom-logo-link {
+    position: relative;
+    z-index: 1000;
   }
 
   .site-background-image.home {
     background-position: 50% 0%;
   }
 
-  .site_nav .menu-top-menu-container {
+  .site_nav .menu_list_group {
     display: none;
   }
-  .site_nav .link_group {
-    display: none;
+
+  .site_nav.show .menu_list_group {
+    display: block;
+    padding: 20px 0px 0px;
   }
 
   .site_nav button {
     height: 30px;
     width: 30px;
     display: flex;
+    border: 0;
+    background-color: transparent;
   }
-  div#wpadminbar {
+
+  .site_nav button svg {
+    fill: #ff6900;
+  }
+
+  .site_nav {
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .site_nav .button_group {
+    position: relative;
+    z-index: 20;
+    margin-right: 20px;
+  }
+
+  .menu-top-menu-container ul li {
+    border-right: transparent;
+    left: 0;
+    margin: 20px 0px;
+  }
+
+  .site_nav.show .menu_list_group {
+    display: block;
+    background: white;
+    height: 360px;
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    top: 60px;
+    width: 100%;
+    background-color: white;
+  }
+
+  .site_nav ul li a {
+    font-size: 20px;
+  }
+
+  nav .link_group {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+  }
+
+  .site_nav button#close_menu,
+  .site_nav.show #open_menu {
     display: none;
   }
+
+  .site_nav.show #close_menu,
+  .site_nav.hide #open_menu {
+    display: block;
+  }
+
+  .menu-top-menu-container ul {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    background-color: white;
+  }
+
 }
