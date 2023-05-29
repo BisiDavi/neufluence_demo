@@ -13,6 +13,9 @@
 
         wp_register_style('banner', get_template_directory_uri() . '/assets/css/banner.css', array(), false, 'all');
         wp_enqueue_style('banner');
+
+        wp_register_style('footer', get_template_directory_uri() . '/assets/css/footer.css', array(), false, 'all');
+        wp_enqueue_style('footer');
     }
 
     function load_js(){

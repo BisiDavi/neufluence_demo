@@ -8,7 +8,9 @@
  * @package Wordpress
  * @subpackage Neufluence
  */
-    
+
+ $current_url = basename(get_permalink());
+ $bg_style = str_contains($current_url,"local") ? 'home' : $current_url;
 ?>
 <!DOCTYPE html>
 <html lang="en" class="html">
@@ -28,7 +30,7 @@
 </head>
 
 <body>
-    <div class="site-background-image" ></div>
+    <div class="site-background-image <? echo $bg_style; ?>" ></div>
     <header>
         <?php the_custom_logo(); ?>
         <nav class="site_nav">

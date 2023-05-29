@@ -41,11 +41,15 @@ body {
   position: relative;
 }
 
+.site-background-image.home {
+  height: 100%;
+}
+
 .site-background-image {
   background-image: url("http://neufluence.local/wp-content/uploads/2023/05/Brands-Background.png");
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 950px;
   top: 0;
   left: 0;
   z-index: 1;
