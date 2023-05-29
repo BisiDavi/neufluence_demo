@@ -176,4 +176,8 @@ footer {
   nav.site_nav {
     display: none;
   }
+
+  .site-background-image.home {
+    background-position: 50% 0%;
+  }
 }
