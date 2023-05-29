@@ -20,11 +20,14 @@
   color: #fc8022;
 }
 
-.banner .title {
+.banner .title h2 {
   font-size: 61px;
   font-family: "Futura";
   color: #204147;
   line-height: 81px;
+}
+
+.banner .title {
   margin: 20px 0;
 }
 
@@ -71,4 +74,34 @@
 .banner.brands .title,
 .banner.creators .title {
   width: 500px;
+}
+
+@media (max-width: 768px) {
+  .banner__text-content {
+    padding-left: 0px;
+  }
+
+  .banner .title h2 {
+    font-size: 39px;
+    line-height: 50px;
+  }
+  .banner .link_group {
+    flex-direction: column;
+    width: 60%;
+    gap: 20px;
+  }
+
+  .banner .link_group a {
+    text-align: center;
+    padding: 10px 0px;
+  }
+
+  .banner__image img {
+    height: 100%;
+    width: 100%;
+  }
+  .banner {
+    flex-direction: column;
+    padding-left: 20px;
+  }
 }

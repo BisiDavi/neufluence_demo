@@ -168,3 +168,12 @@ footer {
   position: relative;
   z-index: 3;
 }
+
+@media (max-width: 768px) {
+  header {
+    padding: 30px 20px;
+  }
+  nav.site_nav {
+    display: none;
+  }
+}

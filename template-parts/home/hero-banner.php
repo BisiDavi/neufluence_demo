@@ -15,7 +15,7 @@
             <h6 class="greeting"><? echo $page_greeting; ?></h6>
         <? } ?>
 
-        <h1 class="title"><? echo $title; ?></h1>
+        <div class="title"><? echo $title; ?></div>
         <h4><? echo $description; ?></h4>
         <div class="link_group">
         <? if($button_1['text']){ ?>
