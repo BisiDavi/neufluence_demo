@@ -159,3 +159,45 @@ footer.footer {
   fill: rgb(149, 30, 181);
   width: 24px;
 }
+
+@media (max-width: 768px) {
+  /* newsletter */
+  .newsletter {
+    width: 80%;
+    padding: 40px;
+    margin-top: 40px;
+  }
+  .newsletter .group {
+    flex-direction: column;
+  }
+  .newsletter form button {
+    width: fit-content;
+  }
+
+  .newsletter form {
+    width: unset;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  /* footerr */
+  .footer_links ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .footer_links {
+    flex-direction: column;
+    margin-left: unset;
+    margin: 40px 0px;
+  }
+
+  .footer_content {
+    width: 75%;
+    padding: 60px 0px;
+    margin: auto;
+    flex-direction: column;
+  }
+}

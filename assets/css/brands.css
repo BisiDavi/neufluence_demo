@@ -100,3 +100,36 @@
   font-family: "Futura_Light";
   font-weight: 400;
 }
+
+@media (max-width: 768px) {
+  .about_our_brands {
+    padding: 50px 0px;
+  }
+
+  .about_our_brands div {
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  .brands_view .campaigns img {
+    width: 100%;
+  }
+  .brands_view .campaigns {
+    flex-direction: column;
+  }
+  .brands_view .activate {
+    flex-direction: column;
+    margin: 0px;
+    padding: 20px;
+  }
+  .activate .image_view img {
+    height: 100%;
+    width: 100%;
+  }
+  .brands_view .activate .text_view {
+    width: unset;
+    margin-top: 10px;
+    margin-left: 0px;
+    padding: 0px 20px 80px;
+  }
+}
