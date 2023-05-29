@@ -35,6 +35,7 @@
 }
 .newsletter .form-control {
   width: 100%;
+  position: relative;
 }
 
 .newsletter .form-control input {
@@ -57,7 +58,25 @@
   font-size: 24px;
 }
 
+.newsletter .form-control svg {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  left: 15px;
+  top: 16px;
+  fill: rgb(59, 59, 59);
+}
+
 /* footer */
+
+.footer_divider {
+  width: 80%;
+  border: 0.1px solid rgb(180, 51, 51);
+  z-index: 2;
+  position: relative;
+  margin: 40px auto 80px;
+}
+
 .footer_content {
   position: relative;
   z-index: 2;

@@ -2,6 +2,9 @@
 <footer class="footer">
     <div class="footer_bg"></div>
     <? get_template_part('template-parts/newsletter', 'newsletter'); ?>
+    
+    <hr class="footer_divider" />
+
     <div class="footer_content">
         <div class="footer_logo">
             <?php the_custom_logo(); ?>
