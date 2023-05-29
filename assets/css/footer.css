@@ -101,6 +101,7 @@ footer.footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
+  margin-top: 15px;
 }
 
 .footer_content ul li {
@@ -128,6 +129,7 @@ footer.footer {
   font-family: "Futura_Book";
   line-height: 29px;
   font-size: 16px;
+  margin-top: 5px;
   color: #3b3b3b;
 }
 
