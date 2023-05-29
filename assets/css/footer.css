@@ -68,15 +68,6 @@
 }
 
 /* footer */
-
-.footer_divider {
-  width: 80%;
-  border: 0.1px solid rgb(180, 51, 51);
-  z-index: 2;
-  position: relative;
-  margin: 40px auto 80px;
-}
-
 .footer_content {
   position: relative;
   z-index: 2;
@@ -94,4 +85,75 @@ footer.footer {
   left: 0;
   z-index: 1;
   background-size: cover;
+}
+
+.footer_content {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  margin: auto;
+  margin-top: 50px;
+  padding: 80px 40px 250px 40px;
+  border-top: 1px solid rgb(180, 51, 51);
+}
+
+.footer_content ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+}
+
+.footer_content ul li {
+  list-style: none;
+  font-family: "Futura_Book";
+  line-height: 32px;
+  font-size: 18px;
+  color: #3b3b3b;
+}
+
+.footer_links {
+  display: flex;
+  margin-left: 35px;
+  gap: 35px;
+}
+
+.footer_content h5 {
+  font-family: "Sen", sans-serif;
+  font-size: 28px;
+  line-height: 39px;
+  color: #204147;
+}
+
+.footer_logo p {
+  font-family: "Futura_Book";
+  line-height: 29px;
+  font-size: 16px;
+  color: #3b3b3b;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.socials span {
+  background-color: white;
+  padding: 0.6em;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.socials span:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.socials svg {
+  height: 24px;
+  fill: rgb(149, 30, 181);
+  width: 24px;
 }
