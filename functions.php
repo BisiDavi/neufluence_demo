@@ -22,7 +22,8 @@
 
 
     function load_js(){
-        wp_enqueue_script('nav',  get_template_directory_uri() . '/assets/js/nav.js', array(), false, false);
+        wp_register_script('nav',  get_template_directory_uri() . '/assets/js/nav.js', array(), false, true);
+        wp_enqueue_script('nav');
 
     }
     add_action('wp_enqueue_scripts', 'load_js');

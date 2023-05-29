@@ -194,4 +194,7 @@ footer {
     width: 30px;
     display: flex;
   }
+  div#wpadminbar {
+    display: none;
+  }
 }

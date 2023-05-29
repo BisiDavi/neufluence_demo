@@ -9,7 +9,7 @@
     $banner = get_field("image",$page_id);
 ?>
 
-<section class="banner <? echo $banner_class; ?>">
+<section id="banner" class="banner <? echo $banner_class; ?>">
     <div class="banner__text-content">
         <? if($page_greeting){ ?>
             <h6 class="greeting"><? echo $page_greeting; ?></h6>

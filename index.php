@@ -12,4 +12,7 @@ get_template_part('template-parts/home/hero-banner', 'hero-banner',array(
     "page_id" => 5,
     "class" => 'home'
 ));
+
+get_footer();
+
 ?>
