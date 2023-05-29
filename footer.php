@@ -1,6 +1,8 @@
+</main>
+<footer class="footer">
+    <div class="footer_bg"></div>
     <? get_template_part('template-parts/newsletter', 'newsletter'); ?>
-    </main>
-    <footer>
+    <div class="footer_content">
         <div class="footer_logo">
             <?php the_custom_logo(); ?>
             <p>© 2021 Neufluence | All Rights reserved</p>
@@ -23,6 +25,7 @@
                 <li>FAQs</li>
             </ul>
         </div>
+    </div>
     </footer>
 </body>
 

@@ -1,12 +1,78 @@
 /* newsletter */
-.newsletter{
-    
+.newsletter {
+  width: 68%;
+  padding: 100px 0;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  margin: auto;
+}
+.newsletter .group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.newsletter h6 {
+  color: #fc8022;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.newsletter h5 {
+  font-size: 40px;
+  line-height: 52px;
+  color: #204147;
+  font-family: "Futura";
+  font-weight: 400;
+  margin-top: 20px;
 }
 
+.newsletter form {
+  display: flex;
+  width: 550px;
+  gap: 0px;
+}
+.newsletter .form-control {
+  width: 100%;
+}
 
+.newsletter .form-control input {
+  border: 0;
+  padding-right: 18px;
+  padding-left: 61px;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: rgb(17, 17, 17);
+  border-radius: 4px;
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.46) 9px 7px 21px -10px;
+  width: -webkit-fill-available;
+}
 
-
-
-
+.newsletter button.btn.gradient {
+  height: 60px;
+  text-transform: capitalize;
+  font-size: 24px;
+}
 
 /* footer */
+.footer_content {
+  position: relative;
+  z-index: 2;
+}
+footer.footer {
+  position: relative;
+}
+
+.footer_bg {
+  background-image: url("http://neufluence.local/wp-content/uploads/2023/05/Brands-Background.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+}
