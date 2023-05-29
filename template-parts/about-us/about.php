@@ -1,18 +1,18 @@
 <?
     $page_id = 7;
-    $title = get_field('title',$page_id);
+    $title = get_field('about_title',$page_id);
     $description = get_field('text',$page_id);
     $missionTitle = get_field('mission_title',$page_id);
     $mission = get_field('mission',$page_id);
 ?>
 
-<section>
-        <div class="about_us">
+<section class="about_us_text">
+        <div class="row who_we_are">
             <h1><? echo $title; ?></h1>
-            <p><? echo $description ?></p>
+            <div><? echo $description ?></div>
         </div>
-        <div class="mission">
+        <div class="row mission">
             <h1><? echo $missionTitle; ?></h1>
-            <p><? echo $mission ?></p>
+            <div><? echo $mission ?></div>
         </div>
 </section>
