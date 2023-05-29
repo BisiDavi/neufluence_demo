@@ -13,5 +13,7 @@ get_template_part('template-parts/home/hero-banner', 'hero-banner', array(
     "class" => 'about_us'
 ));
 
+get_template_part('template-parts/about-us/about', 'about');
+
 get_footer();
 ?>
